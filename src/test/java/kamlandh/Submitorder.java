@@ -51,8 +51,8 @@ public class Submitorder extends BaseTest{
 				AssertJUnit.assertTrue(t);
 				PlaceOrder placeorder=cpage.gotocheckout();
 				placeorder.placeeorderr(input.get("country"));
-			    //String Conformation =placeorder.Conformation();
-				//AssertJUnit.assertTrue(Conformation.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+			    String Conformation =placeorder.Conformation();
+				AssertJUnit.assertTrue(Conformation.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
 				
 				 
 								 
